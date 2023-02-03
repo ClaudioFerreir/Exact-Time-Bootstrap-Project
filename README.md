@@ -1,1 +1,2 @@
-# Exact-Time-Bootstrap-Project
+# Exact Time (E-commerce)
+## A Bootstrap Project
