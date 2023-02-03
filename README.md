@@ -1,2 +1,2 @@
 # Exact Time (E-commerce)
-## A Bootstrap Project
+## A Front-end Bootstrap Project
