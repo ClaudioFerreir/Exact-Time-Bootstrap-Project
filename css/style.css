@@ -103,7 +103,7 @@ body {
 
 @media(min-width: 768px) { /* uso para telas de desktop */
   #search-form { /* importante para que ele se adapte e nao ocupe a linha toda empurrando os items */
-    min-width: 50%; /* largura minima dos elementos */
+    width: 50%; /* largura que o elemento deve ter */
     margin: 0; /* sem margem */
   }
 }
@@ -126,4 +126,18 @@ body {
 
 #search-form input::placeholder {
   color: #fff; /* cor do placeholder no input */
+}
+
+/* BOTTOM NAVBAR */
+#bottom-navbar-container .container {
+  justify-content: flex-end; /* reflete no metodo mobile para direcionar o toggle para direita */
+}
+
+#bottom-navbar-container a {
+  font-weight: 600; /* poe em negrito os links */
+  color: #FFF; /* cor da fonte dos links */
+}
+
+.navbar-toggler {
+  font-size: 1.5em; /* tamanho do toggler da navbar */
 }
