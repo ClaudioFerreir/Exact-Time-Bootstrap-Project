@@ -1,3 +1,110 @@
-h1 {
-  color: red;
+* {
+  font-family: 'Montserrat', sans-serif;
 }
+
+body {
+  background-color: #252525;
+  color: #fff
+}
+
+.primary-bg-color {
+  background-color: #252525;
+}
+
+.secondary-bg-color {
+  background-color: #C09578;
+}
+
+.light-bg-color {
+  background-color: #FCF5EB;
+}
+
+.dark-bg-color {
+  background-color: #101010;
+}
+
+.primary-color {
+  color: #C09578;
+}
+
+.secundary-color {
+  color: #626262;
+}
+
+.light-color {
+  color: #FCF5EB;
+}
+
+/* NAVBAR */
+#navbar .navbar-nav {
+  flex-direction: row; /* navbar itens alinhados */
+  justify-content: end; /* alinha horizontalmente para direita */
+}
+
+#navbbar .navbar-nav li {
+  margin-left: 1em; /* espacamos os itens da navbar */
+}
+
+#navbar a,
+#navbar button {
+  color: #FFF; /* cor branca para o texto */
+}
+
+#navbar li {
+  position: relative; /* para pode posicionar o elemento filho, o numeral do carrinho absoluto com relacao a ele */
+}
+
+#navbar i {
+  font-size: 20px; /* tamanho dos icones */
+}
+
+#navbar span {
+  position: absolute; /* posicao sera em relacao ao elemento pai */
+  top: -8px; /* posicao sera em relacao ao elemento pai */
+  right: -8px; /* posicao sera em relacao ao elemento pai */
+  width: 20px; /* largura do item */
+  height: 20px; /* altura do item */
+  border-radius: 50%; /* bordas do elemento deixando ele redondo */
+  background-color: #EF3636; /* cor do circulo */
+  text-align: center; /* texto alinhado ao centro */
+}
+
+#bag-item span {
+  left: 20px; /* poe o bullet com o numero mais para proximo do item bag ja que este elemento e maior que o outro */
+}
+
+.navbar-brand {
+  font-weight: 700; /* mais negrito na fonte */
+  width: 100%; /* ocupa 100% do espaco restante do navbar */
+  text-align: center; /* texto alinhado ao centro do espaco */
+}
+
+@media(min-width: 768px) { /* uso para telas de desktop */
+  .navbar-brand {
+    text-align: left; /* texto alinhado a esquerda para o tamanho desktop */
+  }
+}
+
+#navbar-items {
+  justify-content: space-between; /* disposicao ativada para ativaçao com o flex com o tamanho desktop e nao muda nada em mobile por isso nao adiciono o display flex aqui*/
+}
+
+@media(min-width: 768px) { /* uso para telas de desktop */
+  #navbar-items {
+    min-width: 80%; /* largura minima dos elementos */
+    display: flex; /* elementos em disposicao row */
+  }
+}
+
+#search-form {
+  width: 100%; /* campo de pesquisa ocupar 100% */
+  margin: 2em 0; /* margem superior e inferior para separar dos demais elementos */
+}
+
+@media(min-width: 768px) { /* uso para telas de desktop */
+  #search-form { /* importante para que ele se adapte e nao ocupe a linha toda empurrando os items */
+    min-width: 50%; /* largura minima dos elementos */
+    margin: 0;
+  }
+}
+
