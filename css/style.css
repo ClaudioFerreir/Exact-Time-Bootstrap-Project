@@ -107,3 +107,23 @@ body {
     margin: 0; /* sem margem */
   }
 }
+
+#search-form { /* quadro que engloba todo o campo de pesquisa */
+  border: 2px solid #626262;
+  border-radius: 3px;
+  padding: 5px 15px;
+}
+
+#search-form input { /* regiao de digitacao do input */
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+
+#search-form input:focus {
+  box-shadow: none; /* removemos o focus no campo de pesquisa so clicarmos nele */
+}
+
+#search-form input::placeholder {
+  color: #fff; /* cor do placeholder no input */
+}
