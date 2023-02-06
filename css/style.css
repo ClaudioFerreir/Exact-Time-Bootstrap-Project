@@ -141,3 +141,37 @@ body {
 .navbar-toggler {
   font-size: 1.5em; /* tamanho do toggler da navbar */
 }
+
+/* BANNERS */
+#banners-container {
+  padding: 0; /* container que inclue todos os banners carousel */
+}
+
+.carousel-caption {
+  /* foco inicial em mobile */
+  bottom: 5em; /* maior margem inf da descricao */
+  padding: 1em; /* espaco interno */
+  left: 12%; /* espacamento da esquerda */
+  right: 12%; /* espacamento da direita */
+}
+
+.carousel-caption h5 {
+  font-size: 1.8em; /* tamanho da fonte para mobile */
+}
+
+@media(min-width: 768px) { /* uso para telas de desktop */
+  #slider .carousel-item,
+  #slider img {
+    height: 600px; /* altura da imagem */
+  }
+
+  .carousel-caption {
+    /* diminui a area cinza */
+    left: 23%; /* espacamento da esquerda */
+    right: 23%; /* espacamento da direita */
+  }
+
+  .carousel-caption h5 {
+    font-size: 4em; /* tamanho da fonte para desktop */
+  }
+}
