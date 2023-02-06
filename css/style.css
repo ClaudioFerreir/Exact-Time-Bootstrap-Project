@@ -27,7 +27,7 @@ body {
   color: #C09578;
 }
 
-.secundary-color {
+.secondary-color {
   color: #626262;
 }
 
@@ -175,3 +175,62 @@ body {
     font-size: 4em; /* tamanho da fonte para desktop */
   }
 }
+
+/* MINI_BANNERS */
+#mini-banners {
+  margin-top: -3em; /* faz com que ele entre no carrosel */
+  z-index: 10; /* altera a posicao do elemento no eixo z de profundidade com isso ele neste caso vai ficar por cima do slide */
+}
+
+#mini-banners .col-12 { /* regra para o mobile */
+  z-index: 1; /* profundidade para o mobile */
+  height: 300px; /* altura determinada nas colunas */
+  padding: 1.5em; /* espacamento interno nos cards dos banners */
+  position: relative; /* para este banner ser a referencia das imagens que terao um posicionamento absoluto */
+  display: flex; /* para os itens internos dentro deste col-12 */
+  flex-direction: column; /* fluxo dos itens para colunas ja que o padrao e o row */
+  justify-content: space-between; /* ficam espacados entre si ou seja um fica no topo e outro embaixo */
+}
+
+@media(min-width: 768px) { /* formato desktop aprox 19 pol */
+  #mini-banners .col-12 {
+    max-width: 30%; /* determinamos a largura maxima dos mini banners. Assim ficam dispostos 3 na pagina em formato desktop*/
+  }
+}
+
+#mini-banners .col-12 h2 {
+  text-transform: uppercase;
+  max-width: 50px; /* isso é feito para quebrar a frase e assim ter uma palavra em cada linha */
+  font-size: 2.2em; /* tamanho da fonte */
+  font-weight: 700; /* colocacao do texto em negrito */
+  line-height: 1em; /* para quando eles quebrarem a linha poderem ficar bem proximos */
+}
+
+#mini-banners .col-12 img {
+  height: 220px; /* altura das imagens */
+  position: absolute; /* posicao absoluta */
+  /* com as determinacoes abaixo posicionamos o item no quadro */
+  right: 1em; /* posicao da direita */
+  bottom: 1em; /* posicao com relacao ao final  */
+}
+
+#mini-banners .col-12 a {
+  font-weight: bold;
+  color: #fff;
+  font-size: 0.8em;
+  transition: 0.5s;
+}
+
+#mini-banners .col-12 a:hover {
+  color: #101010;
+}
+
+#mini-banners #mini-banner-1 a:hover,
+#mini-banners #mini-banner-3 a:hover {
+  color: #c09578;
+}
+
+#mini-banners #mini-banner-3 a {
+  color: #101010;
+}
+
