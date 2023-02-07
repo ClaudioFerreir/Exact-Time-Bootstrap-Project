@@ -319,3 +319,33 @@ body {
     font-size: 6em; /* aumentamos a fonte para ficar melhor no formato desktop */
   }
 }
+
+/*  NEW PRODUCTS */
+#new-products {
+  margin-bottom: 5em; /* para afastar esta categoria da proxima */
+}
+
+#new-products-banner { /* div que so aparece no formato desktop */
+  display: flex;
+  flex-direction: column; /* informacoes vao em um formato colunar */
+  justify-content: center; /* centraliza no sentido da flex-directon, neste caso, na vertical */
+  align-items: center; /* centraliza na horizontal */
+  background-color: #101010;
+}
+
+#new-products-banner h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: .5em; /* para separar do texto inferior */
+  font-size: 2.5em;
+}
+
+#new-products .col-md-4 { /* div dos produtos */
+  padding: 0; /* tiramos os espaços entre os cards dos produtos */
+}
+
+#new-products .card img { /* padronizacao das imagens dos cards */
+  height: 150px;
+  width: 90px;
+  margin: 2em auto;
+}
