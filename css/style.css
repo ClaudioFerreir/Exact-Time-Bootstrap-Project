@@ -233,3 +233,59 @@ body {
 #mini-banners #mini-banner-3 a {
   color: #101010;
 }
+
+/* BEST SELLERS */
+#best-sellers {
+  padding: 4em 0; /* espacar o elemento acima e abaixo dos outros - eixo y */
+}
+
+#best-sellers .row {
+  margin: 0; /* tira a margem que normalmente por padrao e negativa no row */
+}
+
+#best-sellers .col-md-3 {
+  padding: 0; /* removemos o padding padrao do bootstrap */
+}
+
+.title { /* sera utilizada em outras partes */
+  text-transform: uppercase;
+  font-weight: 900; /* simular mais forte que o bold */
+  font-size: 2.5em;
+  margin-bottom: 1em; /* para afastar dos itens abaixo */
+  text-align: center;
+}
+
+@media(min-width: 768px) {
+  .title {
+    text-align: left;
+  }
+}
+
+.card {
+  text-align: center;
+  border-radius: 0; /* remove o bordo do card que o bootstrap adiciona */
+}
+
+.card img {
+  width: 140px; /* largura da imagem */
+  margin: 2em auto; /* separa a img do bordo superior e do texto inf */
+}
+
+.card .card-category {
+  font-size: 0.8em;
+}
+
+.card .card-text { /* relativo ao preco */
+  margin: 2em 0; /* para afastar dos outros conteudos */
+  font-weight: bold;
+}
+
+.btn {
+  background-color: transparent;
+  border-color: #C09578;
+}
+
+.btn:hover {
+  background-color: #C09578;
+  border-color: #C09578;
+}
