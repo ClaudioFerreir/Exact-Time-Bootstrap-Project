@@ -484,5 +484,7 @@ body {
   }
 
   /* COPY CONTAINER */
-
-  
+  #copy-container {
+    text-align: center;
+    padding: 30px;
+  }
